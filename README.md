@@ -4,7 +4,7 @@ code base for skills and learning records for coding languages I use
 ## Main languages
 > Python\
 > Typescript\
-> C++\
+> C++
 
 ## Other related resources
 > NPM packages\
