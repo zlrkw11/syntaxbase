@@ -14,7 +14,7 @@ let fibonacci3: NumberArray = [1, 1, 2, 3, 5];
 let list: any[] = ["ray", 1, true, { age: 21 }];
 
 // array-like object
-function sum() {
+function mySum() {
   let args: { [index: number]: number; length: number; callee: Function } =
     arguments;
 }
