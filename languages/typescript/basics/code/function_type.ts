@@ -27,3 +27,12 @@ let typedSum2_2 = (x: number, y: number): number => {
 const typedSum3 = (x: number, y: number): number => {
   return x + y;
 };
+
+// interface for functio type
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+let mySearch: SearchFunc;
+mySearch = function (source: string, subString: string) {
+  return source.search(subString) !== -1;
+};
