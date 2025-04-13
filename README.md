@@ -5,14 +5,14 @@ code base for skills and learning records for coding languages I use
 
 ### Typescript
 **Basics**
-- primitive type
+- [primitive type](languages\typescript\basics\primitive_types.md)
 - any type
 - type inference
 - union type
 - interface (object)
 - array type
-- function type
-- type assertion
+- [function type](languages\typescript\basics\function_type.md)
+- [type assertion](languages/typescript/basics/type_assertion.md)
 ***
 **Advanced** 
 - type alias

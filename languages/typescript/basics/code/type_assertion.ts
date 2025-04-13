@@ -32,3 +32,23 @@ function isApiError(error: Error) {
 }
 
 (window as any).foo = 1;
+
+// type conversion
+function toBoolean(value: any): boolean {
+  return Boolean(value);
+}
+
+// true
+toBoolean(1);
+
+// type decalaration
+function getCahedData(key: string): any {
+  return (window as any).cache[key];
+}
+
+interface Cat {
+  name: string;
+  run(): void;
+}
+
+const tom: Cat = getCahedData("tom");

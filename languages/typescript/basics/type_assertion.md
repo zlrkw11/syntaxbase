@@ -10,6 +10,44 @@ but in other scenarios, we can use
 <Type>value
 ```
 
+classic example of a type assertion, we asserted ```animal``` **as** ```Fish``` type as it will prevent giving errors; allows us to access the ```.swim()``` function that only belongs to the Fish class
+```Typescript
+interface Cat {
+    name: string;
+    run(): void;
+}
+interface Fish {
+    name: string;
+    swim(): void;
+}
+
+function isFish(animal: Cat | Fish) {
+    if (typeof (animal as Fish).swim === 'function') {
+        return true;
+    }
+    return false;
+}
+```
+
+### Parent And Child Class 
+very common usecase to type assert between **parent** and **child** classes
+
+```Typescript
+class ApiError extends Error {
+    code: number = 0;
+}
+class HttpError extends Error {
+    statusCode: number = 200;
+}
+
+function isApiError(error: Error) {
+    if (typeof (error as ApiError).code === 'number') {
+        return true;
+    }
+    return false;
+}
+```
+
 when Typescript is unsure which type is the variable of the union types, we can only access the **mutual** properties or functions
 
 in this example, we can only access the ```.name``` property.
