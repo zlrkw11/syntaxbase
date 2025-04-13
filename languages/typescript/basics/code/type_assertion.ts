@@ -30,3 +30,5 @@ function isApiError(error: Error) {
   }
   return false;
 }
+
+(window as any).foo = 1;

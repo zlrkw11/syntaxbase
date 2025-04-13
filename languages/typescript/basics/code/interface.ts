@@ -1,4 +1,4 @@
-interface Car {
+interface Vehicle {
   readonly id: number;
   name: string;
   year: number;
@@ -9,7 +9,7 @@ interface Car {
 
 // myCar object must have the exact same properties as Car interface
 // the properties that are optional are declared with ?
-let myCar: Car = {
+let myCar1: Vehicle = {
   id: 11,
   name: "BMW 320i",
   year: 2018,
