@@ -27,7 +27,7 @@ interface SearchFunc {
   (source: string, subString: string): boolean;
 }
 
-const mySearch: SearchFunc = function (
+const mySearch1: SearchFunc = function (
   source: string,
   subString: string
 ): boolean {
