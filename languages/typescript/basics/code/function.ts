@@ -38,3 +38,10 @@ type SomeConstructor = {
 function fn(ctor: SomeConstructor) {
   return new ctor("hello");
 }
+
+// generic functions
+function firstElement(arr: any[]) {
+  return arr[0];
+}
+
+const s = firstElement(["a", "b", "c"]);
